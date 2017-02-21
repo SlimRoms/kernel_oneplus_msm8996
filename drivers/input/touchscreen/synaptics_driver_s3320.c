@@ -135,15 +135,15 @@ struct test_header {
 
 #define KEY_DOUBLE_TAP				KEY_WAKEUP
 #define KEY_GESTURE_CIRCLE			250
-#define KEY_GESTURE_TWO_SWIPE		251
-#define KEY_GESTURE_DOWN_ARROW		252
+#define KEY_GESTURE_TWO_SWIPE			251
+#define KEY_GESTURE_DOWN_ARROW			252
 #define KEY_GESTURE_LEFT_V			253
 #define KEY_GESTURE_RIGHT_V			254
-#define KEY_GESTURE_UP_ARROW		255
-#define KEY_GESTURE_SWIPE_RIGHT		KEY_F5
-#define KEY_GESTURE_SWIPE_LEFT		KEY_F6
-#define KEY_GESTURE_SWIPE_DOWN		KEY_F7
-#define KEY_GESTURE_SWIPE_UP		KEY_F8
+#define KEY_GESTURE_UP_ARROW			255
+#define KEY_GESTURE_SWIPE_RIGHT			256
+#define KEY_GESTURE_SWIPE_LEFT			257
+#define KEY_GESTURE_SWIPE_DOWN			258
+#define KEY_GESTURE_SWIPE_UP			259
 
 #define BIT0 (0x1 << 0)
 #define BIT1 (0x1 << 1)
@@ -154,22 +154,22 @@ struct test_header {
 #define BIT6 (0x1 << 6)
 #define BIT7 (0x1 << 7)
 
-int left_arrow_enable = 0; //">"
-int right_arrow_enable = 0; //"<"
-int double_swipe_enable = 0; // "||"
-int letter_o_enable = 0; // "O"
-int down_arrow_enable = 0; //"V"
-int up_arrow_enable = 0; //"^"
-int double_tap_enable = 0; //"double tap"
+int left_arrow_enable = 1; //">"
+int right_arrow_enable = 1; //"<"
+int double_swipe_enable = 1; // "||"
+int letter_o_enable = 1; // "O"
+int down_arrow_enable = 1; //"V"
+int up_arrow_enable = 1; //"^"
+int double_tap_enable = 1; //"double tap"
 
-int right_swipe_enable=0;//"(-->)"
-int left_swipe_enable=0;//"(<--)"
-int down_swipe_enable =0;//"up to down |"
-int up_swipe_enable =0;//"down to up |"
+int right_swipe_enable = 1;//"(-->)"
+int left_swipe_enable = 1;//"(<--)"
+int down_swipe_enable = 1;//"up to down |"
+int up_swipe_enable = 1;//"down to up |"
 
-int letter_w_enable =0;//"(W)"
-int letter_m_enable =0;//"(M)"
-static int gesture_switch = 0;
+int letter_w_enable = 1;//"(W)"
+int letter_m_enable = 1;//"(M)"
+static int gesture_switch = 1;
 #endif
 
 /*********************for Debug LOG switch*******************/
